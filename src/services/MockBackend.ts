@@ -8,11 +8,11 @@ export class MockBackend implements Backend {
     constructor(private config: MockBackendConfig) {
     }
 
-    async obtainInputData(_token: string): Promise<InputData> {
+    async obtainInputData(): Promise<InputData> {
         return this.config.mockInputData;
     }
 
-    async saveXfdf(_token: string, xfdfContent: string): Promise<void> {
+    async saveXfdf(xfdfContent: string): Promise<void> {
         console.dirxml(new DOMParser().parseFromString(xfdfContent, "text/xml"))
         console.debug(xfdfContent)
     }

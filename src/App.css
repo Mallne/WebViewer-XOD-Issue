@@ -12,31 +12,11 @@ html, body {
     height: 100%;
 }
 
-/* HTML: <div class="loader"></div> */
-.loader {
-    width: 3rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    border: .3rem solid hsl(var(--secondary));
-    border-top-color: hsl(var(--primary));
-    animation: l2 1s infinite ease-in-out;
-    position: absolute;
-    top: calc(50% - 1.5rem);
-    left: calc(50% - 1.5rem);
-    box-sizing: border-box;
-}
-
-@keyframes l2 {
-    to {
-        transform: rotate(1turn)
-    }
-}
-
 #snackbar {
     visibility: hidden;
     min-width: 15rem;
-    background-color: hsl(var(--secondary));
-    color: hsl(var(--primary));
+    background-color: lightblue;
+    color: dodgerblue;
     text-align: center;
     border-radius: .5rem;
     padding: 1rem;

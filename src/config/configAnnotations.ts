@@ -1,10 +1,8 @@
 import {Core, WebViewerInstance} from "@pdftron/webviewer";
 import {State} from "../util.ts";
 import {InputData} from "../services/Backend.ts";
-import installCheckmarkTool, {setDefaultCheckmarkTool} from "./configureCustomTools.ts";
 
 export default function configureAnnotations(instance: WebViewerInstance, props: State) {
-    installCheckmarkTool(instance)
     adjustSubjectForNewAnnotations(instance, props.inputData.annotationIndexData.index);
     setDefaultFontFamily(instance)
     loadInitialAnnotationsIfNotEmpty(instance, props);
@@ -31,7 +29,6 @@ function setDefaultFontFamily(instance: WebViewerInstance) {
 export function loadInitialAnnotationsIfNotEmpty(instance: WebViewerInstance, props: State) {
     instance.Core.documentViewer.addEventListener('documentLoaded', async () => {
         await forceLoadAnnotations(instance, props);
-        setDefaultCheckmarkTool(instance);
     });
 }
 

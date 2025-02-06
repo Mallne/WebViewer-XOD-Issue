@@ -1,15 +1,11 @@
-import {BackendConfig} from "../model/Config";
-import {MockBackend} from "./MockBackend";
-import {RealBackend} from "./RealBackend";
-import {DMSBackend} from "./DMSBackend";
 import {AnnotationIndexData} from "../model/AnnotationIndexData";
 
 // Defines the methods used by this app to determine the input for the Prüfspuren editor and save annotations.
 export interface Backend {
     // Must return all required input data for the given token. Called only once when loading the app.
-    obtainInputData: (token: string) => Promise<InputData>
+    obtainInputData: () => Promise<InputData>
     // Should do something useful with the given annotations. Called when pressing the save button.
-    saveXfdf: (token: string, xfdfContent: string) => Promise<void>
+    saveXfdf: (xfdfContent: string) => Promise<void>
 }
 
 // Represents the data necessary for displaying the Prüfspuren editor.
@@ -29,19 +25,4 @@ export interface InputData {
 // Author which has already contributed annotations to this document.
 export interface Annotator {
     name: string
-}
-
-// Creates the correct backend depending on the given runtime configuration.
-export function createBackend(config: BackendConfig): Backend {
-    console.debug(config.type)
-    switch (config.type) {
-        case 'mock':
-            return new MockBackend(config);
-        case 'real':
-            return new RealBackend(config);
-        case 'dms':
-            return new DMSBackend(config);
-        default:
-            throw Error('Unknown backend type');
-    }
 }

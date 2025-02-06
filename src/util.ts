@@ -1,30 +1,26 @@
-import {fetchConfig} from "./model/Config.ts";
-import {createBackend, InputData} from "./services/Backend.ts";
+import {Config, fetchConfig} from "./model/Config.ts";
+import {InputData} from "./services/Backend.ts";
+import {MockBackend} from "./services/MockBackend.ts";
 
 export interface State {
     inputData: InputData
     saveXfdf: (xfdfContent: string) => Promise<void>
 }
 
-export function extractTokenFromUrl(): string | undefined {
+export function extractTypeFromUrl(): string {
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('token') || undefined;
+    return urlParams.get('type') || "xod";
 }
 
-export function extractConfigHintFromUrl(): string | undefined {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('config') || undefined;
-}
-
-export async function getInitialState(token: string, configHint: string | undefined): Promise<State> {
-    const config = await fetchConfig(configHint, token);
-    const backend = createBackend(config.backend);
+export async function getInitialState(type: string): Promise<State> {
+    const config: Config = await fetchConfig(type);
+    const backend = new MockBackend(config.backend);
     return {
-        inputData: await backend.obtainInputData(token),
+        inputData: await backend.obtainInputData(),
         saveXfdf: async (xfdfContent) => {
             try {
-                await backend.saveXfdf(token, xfdfContent)
-                notify("Prüfspuren gespeichert!")
+                await backend.saveXfdf(xfdfContent)
+                notify("Saved!")
             } catch (err) {
                 // @ts-ignore
                 error(err);
@@ -34,15 +30,6 @@ export async function getInitialState(token: string, configHint: string | undefi
     };
 }
 
-export function loader(): string {
-    return `
-    <div class="loader"></div>
-    `
-}
-
-export function removeLoader() {
-    document.querySelector(".loader")?.remove();
-}
 
 export function error(message: string) {
     console.error(message);
