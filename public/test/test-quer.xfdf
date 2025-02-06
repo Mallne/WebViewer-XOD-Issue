@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xfdf xmlns="http://ns.adobe.com/xfdf/" xml:space="preserve"><annots><polyline page="0" rect="139.808,264.203,149.558,274.703" color="#33CCFF" flags="print" name="5a50ca5e-de04-c26f-5069-d73f7f8ef789" title="1" subject="1" date="D:20250206090036+01'00'" interior-color="#33CCFF" creationdate="D:20250206090036+01'00'" head="None" tail="None"><trn-custom-data bytes="{&quot;trn-annot-no-resize&quot;:&quot;true&quot;}"/><vertices>145.0575,264.9525;148.8075,268.7025;140.5575,273.9525</vertices></polyline><polyline
+        page="0" rect="229.23,388.733,238.98,399.233" color="#33CCFF" flags="print"
+        name="60be8fb5-b4c0-e793-c756-b24c2151458a" title="1" subject="1" date="D:20250206090037+01'00'"
+        interior-color="#33CCFF" creationdate="D:20250206090037+01'00'" head="None" tail="None"><trn-custom-data bytes="{&quot;trn-annot-no-resize&quot;:&quot;true&quot;}"/>
+    <vertices>234.48,389.48249999999996;238.23,393.23249999999996;229.98,398.48249999999996</vertices></polyline><polyline
+        page="0" rect="112.65,609.3,122.4,619.8" color="#33CCFF" flags="print"
+        name="b50cc8dc-8a50-bb47-40e5-bf22d166f28c" title="1" subject="1" date="D:20250206090038+01'00'"
+        interior-color="#33CCFF" creationdate="D:20250206090038+01'00'" head="None" tail="None"><trn-custom-data bytes="{&quot;trn-annot-no-resize&quot;:&quot;true&quot;}"/>
+    <vertices>117.89999999999999,610.05;121.64999999999999,613.8;113.39999999999999,619.05</vertices></polyline><polyline
+        page="0" rect="317.333,233.731,327.083,244.231" color="#33CCFF" flags="print"
+        name="8f3ab658-c588-98fa-c0a6-39a4ba11a107" title="1" subject="1" date="D:20250206090042+01'00'"
+        interior-color="#33CCFF" creationdate="D:20250206090042+01'00'" head="None" tail="None"><trn-custom-data bytes="{&quot;trn-annot-no-resize&quot;:&quot;true&quot;}"/>
+    <vertices>322.5825,234.48000000000002;326.3325,238.23000000000002;318.0825,243.48000000000002</vertices></polyline><polyline
+        page="0" rect="414.698,444.368,424.448,454.868" color="#33CCFF" flags="print"
+        name="ce7c6e6f-b034-8a9b-4a01-b1311ff4653c" title="1" subject="1" date="D:20250206090043+01'00'"
+        interior-color="#33CCFF" creationdate="D:20250206090043+01'00'" head="None" tail="None"><trn-custom-data bytes="{&quot;trn-annot-no-resize&quot;:&quot;true&quot;}"/>
+    <vertices>419.9475,445.1175;423.6975,448.8675;415.4475,454.1175</vertices></polyline><polyline page="0"
+                                                                                                   rect="180.218,566.25,189.968,576.75"
+                                                                                                   color="#33CCFF"
+                                                                                                   flags="print"
+                                                                                                   name="3fdb1521-b668-0847-32c8-73e44ce4bcf5"
+                                                                                                   title="1" subject="1"
+                                                                                                   date="D:20250206090044+01'00'"
+                                                                                                   interior-color="#33CCFF"
+                                                                                                   creationdate="D:20250206090044+01'00'"
+                                                                                                   head="None"
+                                                                                                   tail="None"><trn-custom-data bytes="{&quot;trn-annot-no-resize&quot;:&quot;true&quot;}"/>
+    <vertices>185.4675,567;189.2175,570.75;180.9675,576</vertices></polyline><square page="0"
+                                                                                     rect="78.158,86.108,245.078,197.393"
+                                                                                     color="#33CCFF" flags="print"
+                                                                                     name="e8f4627b-f0d7-1b3c-ef19-c5951adbd577"
+                                                                                     title="1" subject="1"
+                                                                                     date="D:20250206090048+01'00'"
+                                                                                     creationdate="D:20250206090047+01'00'"
+                                                                                     dashes=""/><freetext page="0"
+                                                                                                          rect="88.763,358.35,179.505,491.483"
+                                                                                                          flags="print"
+                                                                                                          name="dec6ab4c-5a6e-b9f7-c9d5-37ed08ba605b"
+                                                                                                          title="1"
+                                                                                                          subject="1"
+                                                                                                          rotation="90"
+                                                                                                          date="D:20250206090100+01'00'"
+                                                                                                          width="0"
+                                                                                                          creationdate="D:20250206090056+01'00'"
+                                                                                                          TextColor="#33CCFF"
+                                                                                                          FontSize="12"><trn-custom-data bytes="{&quot;trn-wrapped-text-lines&quot;:&quot;[\&quot;tesjkasgfkjag \&quot;]&quot;}"/>
+    <contents>tesjkasgfkjag</contents>
+    <contents-richtext><body><p><span style="font-family:Arial;font-size:12pt">tesjkasgfkjag</span><span
+            style="font-family:Arial"/></p></body></contents-richtext>
+    <defaultappearance>0.2 0.8 1 rg /Arial 12 Tf</defaultappearance>
+    <defaultstyle>font: Arial 12pt; text-align: left; text-vertical-align: top; color: #33CCFF</defaultstyle></freetext><freetext
+        page="0" rect="332.513,316.62,372.255,442.47" flags="print" name="34ff05ec-24ee-55b1-55b9-ec59cad2b51c"
+        title="1" subject="1" rotation="90" date="D:20250206090107+01'00'" width="0"
+        creationdate="D:20250206090103+01'00'" TextColor="#33CCFF" FontSize="12"><trn-custom-data bytes="{&quot;trn-wrapped-text-lines&quot;:&quot;[\&quot;sjglkakhsaf \&quot;]&quot;}"/>
+    <contents>sjglkakhsaf</contents>
+    <contents-richtext><body><p><span style="font-family:Arial;font-size:12pt">sjglkakhsaf</span><span
+            style="font-family:Arial"/></p></body></contents-richtext>
+    <defaultappearance>0.2 0.8 1 rg /Arial 12 Tf</defaultappearance>
+    <defaultstyle>font: Arial 12pt; text-align: left; text-vertical-align: top; color: #33CCFF</defaultstyle></freetext><freetext
+        page="0" rect="448.433,151.688,486.848,410.01" flags="print" name="ee064645-484d-f6bb-7d6c-258a7a26d516"
+        title="1" subject="1" rotation="90" date="D:20250206090114+01'00'" width="0"
+        creationdate="D:20250206090110+01'00'" TextColor="#33CCFF" FontSize="12"><trn-custom-data bytes="{&quot;trn-wrapped-text-lines&quot;:&quot;[\&quot;askjglajshgkjahfafasf \&quot;]&quot;}"/>
+    <contents>askjglajshgkjahfafasf</contents>
+    <contents-richtext><body><p><span style="font-family:Arial;font-size:12pt">askjglajshgkjahfafasf</span><span
+            style="font-family:Arial"/></p></body></contents-richtext>
+    <defaultappearance>0.2 0.8 1 rg /Arial 12 Tf</defaultappearance>
+    <defaultstyle>font: Arial 12pt; text-align: left; text-vertical-align: top; color: #33CCFF</defaultstyle></freetext></annots>
+    <pages><defmtx matrix="1.3333333333333333,0,0,-1.3333333333333333,0,1056" /></pages></xfdf>
